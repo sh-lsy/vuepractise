@@ -33,6 +33,24 @@ export default {
                 {
                   value: "fankui1",
                   label: "反馈1",
+                   children: [
+                {
+                  value: "yizhi1",
+                  label: "一致2",
+                },
+                {
+                  value: "fankui1",
+                  label: "反馈2",
+                },
+                {
+                  value: "xiaolv1",
+                  label: "效率2",
+                },
+                {
+                  value: "kekong1",
+                  label: "可控2",
+                },
+              ],
                 },
                 {
                   value: "xiaolv1",
