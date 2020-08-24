@@ -1,12 +1,26 @@
 <template>
   <div class="cascader-item">
-    <slot></slot>
+    <!-- <button>{{itemVal}}</button> -->
+    <slot @click="valClick" :val="itemVal"></slot>
   </div>
 </template>
 
 <script>
 export default {
-
+  props:{   
+    itemVal:{
+      type:Object,
+      default:() =>({})
+    }
+   },
+  methods:{
+    valClick(){
+      console.log(1111111111)
+      alert('11')
+      // let val =this.itemVals
+      // this.$emit('itemval', val)
+    }
+  }
 }
 </script>
 
